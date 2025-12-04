@@ -1,0 +1,371 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Freeman&display=swap');
+
+/* Note: VAG Rounded is a commercial font. Using a similar rounded font as fallback */
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Container Styles - Wider for table to match timed reading */
+.main-content {
+    max-width: 1200px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 auto;
+}
+
+.apprentice-content {
+    max-width: 670px;
+    padding-left: 145px;
+    padding-right: 145px;
+    margin: 0 auto;
+}
+
+/* PAGE 1 STYLES - Build Automaticity */
+
+/* Small Title */
+.small-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    text-transform: uppercase;
+    letter-spacing: 0.48px;
+    /* 3% of 16px */
+    color: #333;
+}
+
+/* Big Title */
+.big-title {
+    font-family: 'Freeman', cursive;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 52px;
+    letter-spacing: 0;
+    color: #23408F;
+    margin-bottom: 20px;
+}
+
+/* List Text */
+.list-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 0;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+
+.list-text ol {
+    padding-left: 20px;
+}
+
+/* Grid/Table Styles with Curved Corners */
+.word-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 30px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #B9B9B9;
+}
+
+.word-table td {
+    border-right: 1px solid #B9B9B9;
+    border-bottom: 1px solid #B9B9B9;
+    padding: 12px 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0;
+}
+
+.word-table td:last-child {
+    border-right: none;
+}
+
+.word-table tr:last-child td {
+    border-bottom: none;
+}
+
+.word-table tr:nth-child(even) td {
+    background-color: #E9ECF4;
+}
+
+.word-table tr:nth-child(odd) td {
+    background-color: #FFFFFF;
+}
+
+/* Table Column/Row Heading */
+.table-heading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 0;
+    color: #23408F;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* Input Fields - Per specifications */
+.form-input {
+    border: 1px solid #686666;
+    background-color: #F4F4F4;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    width: 100%;
+    min-height: 44px;
+    /* Touch target requirement */
+    color: #333;
+}
+
+.form-input::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+/* Buttons */
+.btn-add {
+    background-color: #EC6B5E;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    min-width: 44px;
+    min-height: 44px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-add:hover {
+    background-color: #d55a4d;
+}
+
+.btn-remove {
+    background-color: transparent;
+    color: #23408F;
+    border: 2px solid #d55a4d;
+    border-radius: 8px;
+    padding: 12px 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    min-width: 44px;
+    min-height: 44px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-remove:hover {
+    background-color: #d55a4d;
+    color: white;
+}
+
+.btn-icon {
+    width: 16px;
+    height: 16px;
+}
+
+/* Timed Reading Section - Keep on one line */
+.timed-reading-row {
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.timed-reading-label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #23408F;
+    margin-bottom: 0;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.button-group {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+/* Banner Image - With margins */
+.banner-image {
+    width: calc(100% - 100px);
+    height: auto;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* PAGE 2 STYLES - A Friend to Peonies */
+
+/* Page 2 Container */
+.page2-container {
+    max-width: 1200px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin: 0 auto;
+}
+
+/* Small Title Page 2 */
+.small-title-p2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.48px;
+    /* 3% of 16px */
+    text-transform: uppercase;
+    color: #333333;
+}
+
+/* Medium Title */
+.medium-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.24px;
+    /* 1% of 24px */
+    color: #23408F;
+    margin-bottom: 10px;
+}
+
+/* Big Title Page 2 */
+.big-title-p2 {
+    font-family: 'Freeman', cursive;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 52px;
+    letter-spacing: 0;
+    vertical-align: middle;
+    color: #23408F;
+    margin-bottom: 25px;
+}
+
+/* Paragraph Text */
+.para-text {
+    font-family: 'Varela Round', 'VAG Rounded for BEC', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 0;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Image Box */
+.image-box {
+    background-color: #fff;
+    padding: 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Header Banner Full Width */
+.header-banner {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .main-content {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .page2-container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .apprentice-content {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .big-title,
+    .big-title-p2 {
+        font-size: 40px;
+        line-height: 44px;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .page2-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .apprentice-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .big-title,
+    .big-title-p2 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .word-table td {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .btn-add,
+    .btn-remove {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Ensure images are responsive */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
